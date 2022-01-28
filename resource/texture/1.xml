@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:72903f4831a3abd7986fa9347344f8f0$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="1.tga" width="96" height="52">
+    <sprite n="arrow3.png" x="0" y="0" w="32" h="32"/>
+    <sprite n="checkbox.png" x="32" y="0" w="20" h="20"/>
+    <sprite n="dagou.png" x="52" y="0" w="20" h="20"/>
+    <sprite n="gunbar.png" x="72" y="0" w="20" h="20"/>
+    <sprite n="gundi.png" x="92" y="0" w="4" h="4"/>
+    <sprite n="smallbtn.png" x="0" y="32" w="60" h="20"/>
+    <sprite n="tri.png" x="60" y="32" w="20" h="20"/>
+    <sprite n="tri2.png" x="80" y="32" w="15" h="15"/>
+</TextureAtlas>

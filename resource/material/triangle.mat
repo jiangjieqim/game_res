@@ -1,0 +1,2 @@
+<mat shader="simple;vboDiffuse1" tex0="\resource\texture\1.tga"/>
+<mat shader="diffuseStateBox" _lineColor="0.5,0.5,0.5"/>

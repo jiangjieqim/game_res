@@ -1,0 +1,17 @@
+#version 110
+
+uniform sampler2D texture1;
+varying vec2 out_texcoord;
+
+uniform float _Alpha;
+void main(void){
+		vec4 finalColor=texture2D(texture1, out_texcoord);
+		if(_Alpha<1.0)
+		{
+			finalColor.a = _Alpha;
+		}
+		if(finalColor.a<=0.0){
+			discard;//带透明通道的tga文件处理
+		}else
+			gl_FragColor = finalColor;
+}
