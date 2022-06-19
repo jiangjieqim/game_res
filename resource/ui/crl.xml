@@ -1,0 +1,4 @@
+<ui name="1" type="NPanel" drag="0" center="0" width="200" height="250" line="1"/>
+<ui name="label1" type="NLabel" label="desc" x="50" parent="1" width="512" height="512"/>
+<ui name="infoBtn" type="NButton" x="0" y="20" w="50" h="14" parent="1"/>
+<ui name="sc1" type="NScrollBar" x="0" y="34" parent="1"/>
