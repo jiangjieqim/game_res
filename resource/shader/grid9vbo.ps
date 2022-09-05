@@ -58,5 +58,15 @@ void main(void){
 	//float v = dot(finalColor.rgb,vec3(0.3,0.59,0.11));
 	//gl_FragColor = vec4(v,v,v,1.0);//»Ò¶ÈÂË¾µ
 	
+	/*
+	if(finalColor.r == 1.0 && finalColor.g == 0.0 && finalColor.b == 1.0){
+		discard;
+	}
+	*/
+
+	if(finalColor.a<1.0){
+		discard;
+	}
+
 	gl_FragColor = finalColor;
 }
