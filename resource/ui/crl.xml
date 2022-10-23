@@ -5,6 +5,8 @@
 <ui name="ck0" type="CheckBox" x="0" y="60" label="checkBox" parent="1"/>
 
 <ui name="bg" type="Shape" x="0" y="80" w="128" h="20" r="0" g="0" b="0" line="0" parent="1"/>
+
+<ui name="labelInput1" type="NLabel" label="Input" x="128" y="80" parent="1" width="512" height="512"/>
 <ui name="input1" type="Input" x="0" y="80" w="128" h="20" parent="1"/>
 
 <ui name="label2" type="NLabel" label="NListBox" x="64" y="110" parent="1" width="512" height="512"/>
