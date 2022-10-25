@@ -1,5 +1,8 @@
 <ui name="1" type="NPanel" drag="0" center="0" width="200" height="250" line="0"/>
+<ui name="bg1" type="Shape" x="0" y="0" w="1024" h="20" r="0" g="0" b="0" line="0" parent="1"/>
+
 <ui name="label1" type="NLabel" label="desc" x="50" parent="1" width="512" height="512"/>
+
 <ui name="infoBtn" type="NButton" x="0" y="20" w="50" h="14" parent="1"/>
 <ui name="sc1" type="NScrollBar" x="0" y="34" parent="1"/>
 <ui name="ck0" type="CheckBox" x="0" y="60" label="checkBox" parent="1"/>
