@@ -1,0 +1,13 @@
+{
+    "materal": {
+        "shader": "simple;vboSimple",
+        "cb": "10",
+        "tex0": "resource/texture/bauul.tga"
+    },
+    "mesh": {
+        "url": "resource/md2/bauul.md2"
+    },
+    "tranform": {
+        "scale": 0.1
+    }
+}
