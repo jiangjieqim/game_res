@@ -1,0 +1,24 @@
+{
+    "materal": {
+        "shader": "simple;vboDiffuse1",
+        "shaderParams": [
+            "_Alpha 1.0"
+        ],
+        "tex0": "resource/texture/bauul.tga",
+        "drawPloygonLine": 0,
+        "double_face": 0,
+        "reverse_face": 0,
+        "color": "1 0 0"
+    },
+    "mesh": {
+        "url": "resource/obj/torus.obj"
+    },
+    "tranform": {
+        "scale": 1,
+        "angle": 0,
+        "ax": 1,
+        "ay": 0,
+        "az": 0
+    },
+    "anim": []
+}
