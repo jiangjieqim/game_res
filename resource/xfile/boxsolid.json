@@ -4,14 +4,14 @@
         "shaderParams": [
             "_Alpha 1.0"
         ],
-        "tex0": "resource/texture/1.tga",
-        "drawPloygonLine": 0,
-        "double_face": 0,
+        "tex0": "resource/texture/box.tga",
+        "drawPloygonLine": 1,
+        "double_face": 1,
         "reverse_face": 0,
         "color": "1 0 0"
     },
     "mesh": {
-        "url": "resource/obj/torus.obj"
+        "url": "resource/obj/box.obj"
     },
     "tranform": {
         "scale": 1,
