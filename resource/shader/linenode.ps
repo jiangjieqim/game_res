@@ -1,7 +1,11 @@
 uniform float r;
 uniform float g;
 uniform float b;
+uniform float a;
+
 void main(void){
-	//渲染传递的线框颜色
-	gl_FragColor = vec4(r,g,b,0.0);
+	if(a == 0.0 && r == 0.0 && g == 0.0 && b == 0.0){
+		discard;
+	}
+	gl_FragColor = vec4(r,g,b,a);
 }
