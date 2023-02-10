@@ -4,8 +4,9 @@ uniform float b;
 uniform float a;
 uniform float bDiscard;
 void main(void){
-	if(bDiscard)
+	if(bDiscard == 1.0){
 		discard;
+	}
 
 	gl_FragColor = vec4(r,g,b,a);
 }
