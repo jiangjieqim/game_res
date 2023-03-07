@@ -1,0 +1,39 @@
+
+<proto id="1004" name="Err" desc="通用功能错误码" type="revc">
+    <protobuf type="uint16" name="reason" 
+    desc="
+        //错误码,描述,配置到\Project1\Excel\t_Err.xlsx中
+    " ></protobuf> 
+</proto>
+
+<proto name="stServerConfig">
+    <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
+    <protobuf type="double" name="ServerTime" desc="服务器时间(秒)" ></protobuf> 
+    <protobuf type="uint32" name="openTime" desc="开服时间戳,没有传0" ></protobuf> 
+</proto>
+<proto name="stCellValue">
+    <protobuf type="uint16" name="id" desc="货币类型1:元宝 2:铜钱 3:宝箱卷 4:战斗力 5:经验值 (配置表 t_ExpValue.xlsx) 
+    10002   速度
+    10003	生命
+    10004	攻击
+    10005	防御
+" ></protobuf> 
+    <protobuf type="uint32" name="count" desc="数量" ></protobuf> 
+</proto>
+
+<proto name="stPlayerBaseInfo">
+    <protobuf type="array" itemtype="stCellValue" name="moneyInfo" desc="基础信息" ></protobuf> 
+    <protobuf type="uint32" name="boxCdTime" desc="宝箱抽取的CD时间(秒)，不允许CD时间内重复抽取" ></protobuf> 
+</proto>
+
+<proto id="3004" name="WebClientLogin" desc="玩家登录返回" type="revc">
+    <protobuf type="uint8" name="errorID" desc="错误码
+            Success = 0,//登录成功
+            Failed = 1,//登录失败
+            AccountStopUseing = 2,//账号停用中
+            NoAccount = 3,//账号不存在
+            PasswordError = 4,//密码错误
+    " ></protobuf> 
+    <protobuf type="stServerConfig"  name="serverConfig" desc="服务配置信息" ></protobuf>
+    <protobuf type="stPlayerBaseInfo"  name="BaseInfo" desc="玩家基础信息" ></protobuf>
+</proto>
