@@ -1,19 +1,16 @@
 
-<proto id="1004" name="Err" desc="通用功能错误码" type="revc">
-    <protobuf type="uint8" name="reason" 
-    desc="
-        //错误码,描述,配置到\Project1\Excel\t_Err.xlsx中
-    " ></protobuf> 
-    <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
-    <protobuf type="string" name="ServerTime" desc="服务器时间(秒)" ></protobuf> 
-    <protobuf type="array" itemtype="stServerConfig" name="mylist" desc="基础信息" ></protobuf> 
-    <protobuf type="array" itemtype="uint32" name="serverList" desc="基础信息1" ></protobuf> 
-
-    <protobuf type="stServerConfig"  name="serverConfig" desc="服务配置信息" ></protobuf>
-</proto>
 
 <proto name="stServerConfig">
     <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
-    <protobuf type="uint8" name="ServerTime" desc="服务器时间(秒)" ></protobuf> 
-    <protobuf type="uint32" name="openTime" desc="开服时间戳,没有传0" ></protobuf> 
+    <protobuf type="uint8" name="ServerStatus" desc="服务器状态" ></protobuf> 
+    <protobuf type="uint32" name="OpenTime" desc="开服时间戳,没有传0" ></protobuf> 
+</proto>
+
+
+<proto id="1004" name="Err" desc="通用功能错误码" type="revc">
+    <protobuf type="uint8" name="reason" desc="错误码,描述,配置到\Project1\Excel\t_Err.xlsx中" ></protobuf> 
+    <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
+  <protobuf type="string" name="serverName" desc="服务器名" ></protobuf> 
+  <protobuf type="array" itemtype="stServerConfig" name="mylist" desc="基础信息" ></protobuf>
+  <protobuf type="array" itemtype="uint32" name="serverList" desc="基础信息1" ></protobuf> 
 </proto>
