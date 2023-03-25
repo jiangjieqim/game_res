@@ -19,7 +19,7 @@
 </proto>
 
 <proto id="1002" name="LoginRevc" desc="µÇÂ¼·µ»Ø">
-    <protobuf type="uint8" name="code" desc="0 µÇÂ¼³É¹¦ 1µÇÂ¼Ê§°Ü" ></protobuf> 
+    <protobuf type="uint8" name="code" desc="0 µÇÂ¼³É¹¦ 1Î´×¢²á" ></protobuf> 
     <protobuf type="uint32" name="uid" desc="player uid" ></protobuf> 
 </proto>
 
