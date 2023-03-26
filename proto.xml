@@ -1,0 +1,35 @@
+<proto name="stPos">
+    <protobuf type="uint32" name="uid" desc="uid" ></protobuf> 
+    <protobuf type="uint32" name="x" desc="x" ></protobuf> 
+    <protobuf type="uint32" name="y" desc="y" ></protobuf> 
+    <protobuf type="uint32" name="z" desc="z" ></protobuf> 
+</proto>
+
+<proto name="stServerConfig">
+    <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
+    <protobuf type="uint8" name="ServerStatus" desc="服务器状态" ></protobuf> 
+    <protobuf type="string" name="OpenTimeToken" desc="开服时间token" ></protobuf> 
+</proto>
+
+<proto id="1001" name="LoginReq" desc="登录">
+    <protobuf type="string" name="playername" desc="玩家名" ></protobuf> 
+</proto>
+
+<proto id="1002" name="LoginRevc" desc="登录返回">
+    <protobuf type="uint8" name="code" desc="0 登录成功 1登录失败 服务器会构造一个uid映射玩家" ></protobuf> 
+    <protobuf type="uint32" name="uid" desc="uid" ></protobuf> 
+
+</proto>
+
+<proto id="1004" name="Err" desc="通用功能错误码">
+    <protobuf type="uint8" name="reason" desc="错误码,描述,配置到\Project1\Excel\t_Err.xlsx中" ></protobuf> 
+    <protobuf type="uint32" name="HeartMillisecond" desc="心跳间隔毫秒" ></protobuf> 
+  <protobuf type="string" name="serverName" desc="服务器名" ></protobuf> 
+  <protobuf type="array" itemtype="stServerConfig" name="mylist" desc="基础信息" ></protobuf>
+  <protobuf type="array" itemtype="uint32" name="serverList" desc="基础信息1" ></protobuf> 
+</proto>
+<proto id="1005" name="PosUpdateRevc" desc="坐标更新">
+      <protobuf type="array" itemtype="stPos" name="posList" desc="基础信息" ></protobuf>
+</proto>
+
+
