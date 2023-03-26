@@ -16,7 +16,7 @@
 </proto>
 
 <proto id="1002" name="LoginRevc" desc="登录返回">
-    <protobuf type="uint8" name="code" desc="0 登录成功 1登录失败" ></protobuf> 
+    <protobuf type="uint8" name="code" desc="0 登录成功 1登录失败 服务器会构造一个uid映射玩家" ></protobuf> 
     <protobuf type="uint32" name="uid" desc="uid" ></protobuf> 
 
 </proto>
